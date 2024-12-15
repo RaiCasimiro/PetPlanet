@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Forum&family=Italiana&family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Pridi:wght@200;300;400;500;600;700&family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Forum&family=Italiana&family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Pridi:wght@200;300;400;500;600;700&family=Protest+Strike&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Forum&family=Italiana&family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+MX+Guides&family=Pridi:wght@200;300;400;500;600;700&family=Protest+Strike&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Forum&family=Italiana&family=Lobster&family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+MX+Guides&family=Pridi:wght@200;300;400;500;600;700&family=Protest+Strike&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homenaje&display=swap');
+
+/* GERAL */
+*{
+    font-family: "Homenaje", sans-serif;
+
+}
+
+body{
+    position: relative;
+    /* background-color: bisque; */
+    /* background: linear-gradient(to right, #f1b6897d, #7a11116e);    */
+    background: radial-gradient(circle, #6a0f0fb2, #f7b37e7d);
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/Fundo3.jpg');
+    background-size: cover;
+    opacity: 0.15; /* Ajuste a opacidade da imagem */
+    z-index: -1; /* Garante que a imagem fique atrás do conteúdo */
+    margin-top: -15px;
+  }
+
+
+
+/* HEADER */
+header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header{
+    margin-left: -200px;
+}
+
+span{
+    color: red;
+    font-family: "Lobster", sans-serif;
+    font-size: 80px;    
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.9), /* Sombra preta mais forte */
+                 -4px -4px 5px rgba(255, 255, 255, 0.8); /* Sombra branca mais intensa */
+    margin-right: 20px;
+}
+
+i{
+    font-size: 150px;
+    margin-top: 20px;
+    margin-left: -60px;
+    color:#c70000;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.9), /* Sombra preta mais forte */
+                -4px -4px 5px rgba(255, 255, 255, 0.8)
+}
+
+h1{
+
+}
+
+h2{
+    margin-left: 50px;
+    font-size: 30px;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 20px;
+    margin-left: 25px;
+    margin-top: -15px;
+    background-color: #d40000;
+    color: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid black;
+}
+
+button:hover{
+    transform: scale(1.07);
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+}
+
+.botao{
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+/* CONTEÚDO */
+container{
+    /* display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: row; */
+}
+
+.conteudo{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.card{
+    position: relative;
+    width: 400px; /* Defina a largura desejada para o card */
+    height: 400px; /* Defina a altura desejada para o card */
+    border-radius: 10px; /* Adicione borda arredondada se desejar */
+    overflow: hidden; /* Isso garante que a camada de escurecimento não se estenda além do card */
+    background-image: url('imagens/pães.jpg'); /* Substitua 'caminho/para/sua/imagem.jpg' pelo caminho para sua imagem */
+    background-size: cover; /* Isso faz com que a imagem cubra todo o espaço do card */
+    background-position: center; /* Isso posiciona a imagem no centro do card */
+    transition: transform 0.3s, box-shadow 0.3s; /* Adiciona uma transição suave para mudanças de tamanho */
+    border: 2px solid black;
+    border-radius: 15px;
+    z-index: 0;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55); /* Cor preta com 50% de opacidade */
+    border-radius: 10px; /* Adicione borda arredondada para corresponder ao card */
+    transition: opacity 0.3s; /* Adiciona uma transição suave para mudanças de opacidade */
+    /*opacity: 0;  Começa com opacidade 0 para que a camada de escurecimento seja invisível por padrão */
+}
+
+#card1{
+    background-image: url('/images/BanhoTosa.jpg');
+}
+
+#card2{
+    background-image: url('/images/Racao.jpg');
+}
+
+#card3{
+    background-image: url('/images/Veterinario.jpg');
+}
+
+.card:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+}
+  
+.card:hover::before {
+    opacity: 1; /* Torna a camada de escurecimento visível quando o mouse passa sobre o card */
+}
+
+.card:hover .default-content {
+    display: none; /* Esconde o conteúdo padrão quando o mouse passa sobre o card */
+}
+  
+.card:hover .hover-content {
+    display: block; /* Exibe o conteúdo de hover quando o mouse passa sobre o card */
+}
+
+.default-content, .hover-content {
+    display: block; /* Garante que os elementos de conteúdo sejam exibidos como blocos */
+}
+
+.default-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    font-size: 60px;
+    text-align: center;
+}
+
+.hover-content{
+    display: flex;
+    justify-content: center;
+    margin-top: 140px;
+    font-size: 20px;
+    font-family: "Satisfy", cursive;
+}
+  
+.hover-content {
+    display: none; /* Inicialmente oculta o conteúdo de hover */
+}
+
+.card-content{
+    position: relative; /* Isso garante que o conteúdo do card fique sobre a camada de escurecimento */
+    z-index: 1; /* Garante que o conteúdo do card esteja acima da camada de escurecimento */
+    padding: 20px; /* Adicione preenchimento interno ao conteúdo do card, se necessário */
+    color: #fff; /* Cor do texto do conteúdo */
+}
+
+ul{
+
+}
+
+li{
+    margin-left: 40px;
+    font-size: 23px;
+}
+
+p{
+    margin-left: 50px;
+    font-size: 25px;
+
+}
+
+.beneficios{
+    display: flex;
+    justify-content: space-around;
+}
+
+.clientes{
+}
+
+.conteudo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 70px;
+    margin-right: 70px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.5)
+    /* background-color: rgba(0, 0, 0, 0.192); */
+}
+
+#seVoce{
+    font-size: 30px;
+    color: rgb(113, 1, 1);    
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6),
+                -2px -2px 5px rgba(255, 255, 255, 0.8);
+}
+
+
+
+/* FOOTER */
+.infos {
+    background-color: #d4d4d483; /* Fundo escuro */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centralizar o texto */
+    font-family: Arial, sans-serif; /* Fonte mais limpa */
+    border-radius: 20px;
+    /*border-top: 5px solid #555;  Linha decorativa no topo */
+}
+
+.infos h2 {
+    margin-bottom: 55px; /* Espaçamento abaixo do título */
+    font-size: 40px; /* Tamanho do título */
+}
+
+.infos p {
+    margin: 10px 0; /* Espaçamento entre parágrafos */
+    line-height: 1.6; /* Melhora o espaçamento entre linhas */
+}
+
+.infos a {
+    color: #d40000; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold;
+}
+
+.infos a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    color: #ff1e1e; /* Efeito de hover nos links */
+}
+
+.infos .maisInfos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* text-align: justify; */
+    /* margin-left: 500px; */
+}
